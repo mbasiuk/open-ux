@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components</title>
+    <link rel="stylesheet" href="/components.css">
+    <style>
+        #colors {
+            width: 400px;
+        }
+
+        @media (min-width: 800px) {
+            #colors {
+                position: fixed;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="colors">
+    </div>
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <a href="#">Link</a>
+    <br>
+    <a href="#" class="hover">Link Hover</a>
+    <br>
+    <a href="#" class="active">Link Active</a>
+    <br>
+    <a href="/" class="visited">Link Visited</a>
+    <br>
+    <a href="#" class="focused">Link Focused</a>
+
+    <blockquote id="n42" style="margin-right: 0; width: 360px;">Blockquote Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Omnis error deserunt vitae quia
+        blanditiis eaque, alias nam quas, sed est ratione laborum expedita. Reiciendis libero optio aperiam accusamus ad
+        placeat.
+    </blockquote>
+
+    <form style="width: 400px;" onsubmit="return false;">
+
+        <label for="n1">Label for input</label>
+        <input type="text" id="n1" name="n1" placeholder="text input">
+
+        <br>
+
+        <label>
+            input[type=text]
+            <input type="text" name="n2" placeholder="text input">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=text]:hover
+            <input class="hover" name="n3" type="text" placeholder="text input hover">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=text]:focus
+            <input class="focus" name="n4" type="text" placeholder="text input focus">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=number]
+            <input type="number" name="n5" min="1" max="5" placeholder="1 - 5">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=number]:hover
+            <input class="hover" name="n6" type="number" min="1" max="5" placeholder="1 - 5">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=number]:focus
+            <input type="number" class="focus" name="n7" value="3" min="1" max="5" placeholder="1 - 5">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=password]
+            <input type="password" id="n8" name="n8" placeholder="enter a password">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=password]:hover
+            <input type="password" id="n9" name="n9" class="hover" placeholder="enter a password">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=password]:focus
+            <input type="password" id="n10" name="n10" class="focus" value="1234567890" placeholder="enter a password">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=email]
+            <input type="email" id="n11" name="n11" placeholder="example@example.com">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=email]:hover
+            <input type="email" id="n12" name="n12" class="hover" placeholder="example@example.com">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=email]:focus
+            <input type="email" id="n13" name="n13" class="focus" value="example@example.com"
+                placeholder="example@example.com">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=search]
+            <input type="search" id="n21" name="n21" placeholder="type search">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=search]:hover
+            <input type="search" id="n33" name="n33" class="hover" placeholder="type search hover">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=search]:focus
+            <input type="search" id="n34" name="n34" value="search focus" class="focus" placeholder="search example">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=tel]
+            <input type="tel" name="n22" id="n22" placeholder="telephone number">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=tel]:hover
+            <input type="tel" name="n35" id="n35" class="hover" placeholder="telephone number hover">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=tel]:focus
+            <input type="tel" value="12345678" name="n36" id="n36" class="focus" placeholder="telephone number focus">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=url]
+            <input type="url" id="n24" name="n25" placeholder="enter url">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=url]
+            <input type="url" id="n37" name="n37" class="hover" placeholder="enter url hover">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=url]
+            <input type="url" id="n38" name="n38" class="focus" value="https://example.com"
+                placeholder="enter url focus">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=text].b1
+            <input type="text" name="n39" class="b1" placeholder="text input">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=text].b1:hover
+            <input type="text" name="n40" class="b1 hover" placeholder="text input hover">
+        </label>
+
+        <br>
+
+        <label>
+            input[type=text].b1:focus
+            <input type="text" name="n41" class="b1 hover focus" value="text input focus"
+                placeholder="text input focus">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=checkbox]
+            <input id="n15" name="n15" type="checkbox" value="1" checked>
+        </label>
+
+        <br>
+
+        <label>
+            input [type=color]
+            <input type="color" name="n30" id="n30">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=date]
+            <input type="date" name="n31" id="n31">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=Datetime-local]
+            <input id="n32" id="n32" type="datetime-local" placeholder="placeholder" />
+        </label>
+
+        <br>
+
+        <label>
+            input [type=month]
+            <input type="month" id="n16" name="n16">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=week]
+            <input type="week" id="n17" name="n17">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=time]
+            <input type="time" id="n23" name="n23" value="search" placeholder="select time">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=file]
+            <input type="file" id="n18" name="n18" value="Choose File">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=image]
+            <input type="image" alt="Run Action" id="n20" name="n20" src="/img/search.svg">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=radio]
+            <input name="radio" id="radio1" type="radio" value="radio1">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=radio] 2
+            <input type="radio" id="radio2" name="radio" value="radio2">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=radio] 3
+            <input type="radio" id="radio3" name="radio" value="radio3" placeholder="radio3">
+        </label>
+
+        <br>
+
+        <label>
+            input [type=range]
+            <input type="range" id="range1" name="range" value="range" placeholder="range">
+        </label>
+
+        <br>
+
+        <div style="display: flex; flex-direction: column; width: 200px; margin-left: auto;">
+
+            <button>button</button>
+
+
+            <button class="hover">button:hover</button>
+
+
+            <button class="focus">button:focus</button>
+
+            <br>
+
+            <input type="button" value="input [type=button]" placeholder="input button">
+
+            <br>
+
+            <input type="submit" value="input [type=submit]">
+
+            <br>
+
+            <input type="reset" value="input [type=reset]">
+
+            <br>
+
+            <button class="b1">button.b1</button>
+
+            <button class="hover b1">button.b1:hover</button>
+
+            <button class="focus b1">button.b1:focus</button>
+
+            <br>
+
+            <input type="button" class="b1" value="input [type=button].b1" placeholder="input button">
+
+            <br>
+
+            <input id="n44" type="submit" class="b1" value="input [type=submit].b1">
+
+            <br>
+
+            <input id="n43" type="reset" class="b1" value="input [type=reset].b1">
+
+        </div>
+
+        <br>
+
+    </form>
+
+    <h2>
+        Higher Level Components
+    </h2>
+
+    <p>Horizontal menu:</p>
+
+    <div style="width: 400px;" class="menu menu-horizontal">
+        <a href="#n20" class="item">
+            <span class="ico ico-search"></span>
+            <span class="">Search</span>
+        </a>
+        <a href="#n43" class="item">
+            <span class="ico ico-visits"></span>
+            <span class="">Details</span>
+        </a>
+        <a href="#n44" class="item hover">
+            <span class="ico ico-search"></span>
+            <span class="">Hover Details</span>
+        </a>
+        <a href="#n43" class="item focus">
+            <span class="ico ico-visits"></span>
+            <span class="">Focus Details</span>
+        </a>
+    </div>
+
+    <p>List:</p>
+
+    <div style="width: 400px;" class="list">
+        <label class="item">
+            Lorem ipsum dolor sit amet.
+        </label>
+        <label class="item">
+            Lorem ipsum dolor sit.
+        </label>
+        <label class="item hover">
+            hover Lorem ipsum dolor sit amet.
+        </label>
+        <label class="item focus">
+            focus Lorem, ipsum dolor.
+        </label>
+    </div>
+
+    <p>List with selected items:</p>
+
+    <div style="width: 400px;" class="list">
+        <label class="item">
+            <input id="n26" name="n26" type="checkbox">
+            <span>Lorem ipsum dolor sit amet.</span>
+        </label>
+        <label class="item">
+            <input type="checkbox" id="n27" name="n27" checked="checked">
+            <span>Lorem ipsum dolor sit.</span>
+        </label>
+        <label class="item hover">
+            <input type="checkbox" id="n28" name="n28">
+            <span>Hover Lorem ipsum dolor sit amet.</span>
+        </label>
+        <label class="item focus">
+            <input type="checkbox" id="n29" name="n29">
+            <span>Active Lorem, ipsum dolor.</span>
+        </label>
+    </div>
+
+    <p>List with links:</p>
+    <div class="list" style="width: 400px;">
+        <label class="item">
+            Lorem, ipsum dolor.
+            <span class="ico ico-search"></span>
+        </label>
+        <label class="item">
+            Lorem ipsum dolor sit amet.
+            <span class="ico ico-search"></span>
+        </label>
+    </div>
+
+
+</body>
+
+<script>
+    var variables = {
+        "--input-background-color": "#e3f2fdb8",
+        "--input-background-color-hover": "#e3f2fdda",
+        "--input-background-color-focus": "#d8efff",
+        "--input-bordered-background-color": "#fff",
+        "--input-bordered-backgound-color-hover": "#e3f2fdda",
+        "--input-bordered-backgound-color-focus": "#fff",
+        "--button-background-color": "#3471d4",
+        "--button-background-color-hover": "#4481f4",
+        "--button-background-color-focus": "#2461e4",
+        "--icon-color": "#cecece"
+    };
+
+    var colors = document.getElementById("colors");
+
+    (function init() {
+        var frag = document.createDocumentFragment();
+        for (var v in variables) {
+            if (!variables.hasOwnProperty(v)) {
+                continue;
+            }
+            var key = v;
+            var color = variables[v];
+            var div = document.createElement("div");
+            frag.appendChild(div);
+            var label = document.createElement("label");
+            div.appendChild(label);
+            label.setAttribute("for", key);
+            label.textContent = key;
+            var picker = document.createElement("input");
+            label.appendChild(picker);
+            picker.setAttribute("type", "color");
+            picker.setAttribute("id", key);
+            picker.setAttribute("value", color);
+            picker.onchange = changeColor;
+        }
+        colors.appendChild(frag);
+    })();
+
+
+    function changeColor(e) {
+        document.documentElement.style.setProperty(e.target.id, e.target.value);
+    }
+
+
+</script>
+
+</html>
