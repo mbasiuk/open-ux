@@ -1,6 +1,6 @@
 {
   "name": "open-ux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "css library with native components for cross-platform UX bootstraping.",
   "main": "index.js",
   "scripts": {
