@@ -1,0 +1,247 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.3px;
+    font-size: 13px;
+}
+
+:root {
+    --input-background-color: #e3f2fdb8;
+    --input-background-color-hover: #e3f2fdda;
+    --input-background-color-focus: #d8efff;
+    --input-bordered-background-color: #fff;
+    --input-bordered-backgound-color-hover: #e3f2fdda;
+    --input-bordered-backgound-color-focus: #fff;
+    --button-background-color: #3471d4;
+    --button-background-color-hover: #4481f4;
+    --button-background-color-focus: #2461e4;
+    --icon-color: #878787;
+    --height: 32px;
+}
+
+a {
+    display: inline-block;
+    line-height: 32px;
+    color: #3471d4;
+    text-decoration: none;
+}
+
+a:hover,
+a.hover {
+    color: rgb(34, 104, 215);
+    text-decoration: underline;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    padding: 0;
+    line-height: var(--height);
+    border-radius: 0;
+    background-color: var(--input-background-color);
+}
+
+.item {
+    line-height: var(--height);
+    background-color: var(--input-background-color);
+}
+
+.btn,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    background-color: var(--button-background-color);
+    color: white;
+}
+
+input:hover,
+.item:hover,
+.hover {
+    background-color: var(--input-background-color-hover);
+}
+
+.btn:hover,
+.btn.hover,
+button:hover,
+button.hover,
+input[type=button]:hover,
+input[type=button].hover,
+input[type=reset]:hover,
+input[type=reset].hover,
+input[type=submit]:hover,
+input[tbody=submit].hover {
+    background-color: var(--button-background-color-hover);
+}
+
+input:focus,
+.focus,
+.focus:hover {
+    background-color: var(--input-background-color-focus);
+}
+
+.btn:focus,
+.btn.focus,
+button:focus,
+button.focus,
+button:focus:hover,
+button.focus:hover,
+input[type=button]:focus,
+input[type=button].focus,
+input[type=reset]:focus,
+input[type=reset].focus,
+input[type=submit]:focus,
+input[type=submit].focus {
+    background-color: var(--button-background-color-focus);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    padding: 0 5px;
+}
+
+input[type=number] {
+    min-width: 100px;
+}
+
+.b1 {
+    outline: 1px solid black;
+}
+
+.b1:hover,
+.b1.hover {
+    outline: 1px solid #0a2757;
+}
+
+.b1:focus,
+.b1.focus {
+    outline: 1px solid #3471d4;
+}
+
+input[type=checkbox],
+input[type=radio],
+input[type=range] {
+    height: 32px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+input[type=color],
+input[type=image] {
+    height: var(--height);
+    vertical-align: middle;
+    border: none;
+    padding: 0;
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time] {
+    line-height: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--input-background-color);
+}
+
+input[type=date]:hover,
+input[type=date].hover,
+input[type=datetime-local]:hover,
+input[type=datetime-local].hover,
+input[type=month]:hover,
+input[type=month].hover,
+input[type=week]:hover,
+input[type=week].hover,
+input[type=time]:hover,
+input[type=time].hover {
+    background-color: var(--input-background-color-hover);
+}
+
+input[type=date]:focus,
+input[type=date].focus,
+input[type=datetime-local]:focus,
+input[type=datetime-local].focus,
+input[type=month]:focus,
+input[type=month].focus,
+input[type=week]:focus,
+input[type=week].focus,
+input[type=time]:focus,
+input[type=time].focus {
+    background-color: var(--input-background-color-focus);
+}
+
+input[type=file] {
+    line-height: var(--height);
+}
+
+input[type=file]:hover {
+    background-color: var(--input-background-color-hover);
+}
+
+input[type=file]:focus {
+    background-color: var(--input-background-color-focus);
+}
+
+.menu {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(16px);
+    background-image: url(/img/footer_dark.svg);
+    outline: 1px solid #e3f2fdb8;
+}
+
+.menu .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 4px 0 4px;
+}
+
+.list .item {
+    padding: 0 8px;
+}
+
+.ico {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--icon-color);
+}
+
+.ico-search {
+    mask-image: url(/img/search.svg);
+}
+
+.ico-visits {
+    mask-image: url(/img/visits.svg);
+}
+
+::selection {
+    background: #f75b2a;
+    color: white;
+}
+
+::-moz-selection {
+    background: #f75b2a;
+    color: white;
+}
