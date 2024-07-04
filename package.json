@@ -1,0 +1,22 @@
+{
+  "name": "open-ux",
+  "version": "1.0.0",
+  "description": "css library with native components for cross-platform UX bootstraping.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbasiuk/open-ux.git"
+  },
+  "keywords": [
+    "open-ux"
+  ],
+  "author": "mykhailo.basiuk@gmail.com",
+  "license": "sspl",
+  "bugs": {
+    "url": "https://github.com/mbasiuk/open-ux/issues"
+  },
+  "homepage": "https://github.com/mbasiuk/open-ux#readme"
+}
